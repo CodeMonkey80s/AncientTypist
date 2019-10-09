@@ -10,7 +10,7 @@ All player-related information is stored inside browser's local storage. No data
 
 # Screenshot
 
-![AncientTypist](https://github.com/xPrzybyLx/AncientTypist/blob/master/screenshots/AncientTypist-v120.png)
+![AncientTypist](https://github.com/RetroCoder80s/AncientTypist/blob/master/screenshots/AncientTypist-v120.png)
 
 # Installation
 
