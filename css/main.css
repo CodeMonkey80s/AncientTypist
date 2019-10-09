@@ -1,0 +1,525 @@
+:root {
+  --background-grey: #eeeeee;
+  --border-standard: #dddddd;
+  --border-standard-darker: #bbbbbb;
+  --text-standard: #222222;
+}
+
+html, body {
+  font-family: 'Roboto', SansSerif;
+  background: var(--background-grey);
+}
+
+#headWrap {
+  width: 100%;
+  border-top: 1px solid #aaa;
+}
+
+#headArea {
+  width: 1200px;
+  height: 106px;
+  margin: 0 auto 0 auto;
+  display: block;
+  font-size: 18px;
+  background: transparent url("../gfx/tentacles-right.png") no-repeat 606px -281px;
+}
+
+#headArea table {
+  width: 100%;
+}
+
+#headArea table td {
+  vertical-align: middle;
+  height: 100px;
+  color: DimGrey;
+}
+
+#headArea table td.column1 {
+  width: 525px;
+  text-align: left;
+  background: url("../gfx/bg-icon-elder-sign.png") no-repeat 0px -13px;
+}
+
+#headArea table td.column2 {
+  width: 200px;
+  text-align: center;
+}
+
+#headArea table td.column3 {
+  width: 525px;
+  text-align: right;
+}
+
+#headArea table td h1 {
+  font-family: 'Bad Script', serif;
+  font-size: 32px;
+  margin: 2px 0 0 0;
+  color: var(--text-standard);
+}
+
+#headArea table td h2 {
+  font-size: 16px;
+  margin: 12px 0 0 3px;
+  color: #888;
+}
+
+#headArea table img.userAvatar {
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+#headArea span.rulerWrap {
+    margin-right: 16px;
+    line-height: 32px;
+    display: inline-block;
+}
+#headArea span.ruler {
+    display: inline-block;
+    height: 32px;
+    width: 1px;
+    background: #bbb;
+}
+
+#headArea span.bookInfoPages {
+  color: var(--text-standard);
+  line-height: 32px;
+  font-weight: bold;
+}
+
+#headArea span.pointsWrap i {
+  margin-right: 16px;
+  color: #222222;
+  font-size: 16px;
+}
+
+#headArea span.pointsWrap {
+  margin-right: 16px;
+  color: var(--text-standard);
+    line-height: 32px;
+    display: inline-block;
+}
+
+#headArea span.gemsWrap i {
+  margin-right: 16px;
+  color: #222222;
+  font-size: 16px;
+}
+
+#headArea span.gemsWrap {
+  margin-right: 16px;
+  color: var(--text-standard);
+    line-height: 32px;
+    display: inline-block;
+}
+
+#headArea a#iconOptions {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  margin-right: 16px;
+}
+
+#headArea a#iconOptions i {
+  font-size: 32px;
+  color: #222222;
+}
+
+#headArea a#goToPagePrevious {
+  float: left;
+}
+
+#headArea a#goToPagePrevious i {
+  color: #222222;
+  font-size: 32px;
+}
+
+#headArea a#goToPagePrevious.disabled i,
+#headArea a#goToPageNext.disabled i {
+  color: LightGrey;
+  cursor: not-allowed;
+}
+
+#headArea a#goToPageNext {
+  float: right;
+}
+
+#headArea a#goToPageNext i {
+  color: #222222;
+  font-size: 32px;
+}
+
+#headOptionsWrap {
+  width: 100%;
+  color: #eeeeee;
+  background: #222;
+  border-top: 1px solid var(--border-standard-darker);
+}
+
+#headOptionsArea {
+  display: block;
+  margin: auto;
+  width: 1200px;
+  padding:32px 0;
+}
+
+#headOptionsArea table#tableOptions {
+  width: 100%;
+}
+
+#headOptionsArea table#tableOptions td {
+  width: 50%;
+}
+#headOptionsArea table#tableOptions td hr {
+  height:1px;
+  border:0;
+  background: DimGrey;
+  width: 50%;
+  display: block;
+  margin:23px auto;
+}
+#headOptionsArea table#tableOptions td.column1 {
+  text-align: right;
+}
+#headOptionsArea table#tableOptions td.column1 span {
+  margin-right: 32px;
+  line-height: 32px;
+}
+#headOptionsArea table#tableOptions td.column2 {
+  line-height: 32px;
+  text-align: left;
+  color: DimGrey;
+}
+#headOptionsArea table#tableOptions td.column2 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: Grey;
+}
+#headOptionsArea table#tableOptions td.column2 a.selected {
+  color:#eeeeee;
+  font-weight: bold;
+}
+#headOptionsArea table#tableOptions td.column2 a.selected[data-value=On] {
+  color:#fff;
+}
+#headOptionsArea table#tableOptions td.column2 a.selected[data-value=Off] {
+  color:#f00;
+}
+
+#headOptionsArea table#tableOptions td i {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+#bodyWrap {
+  width: 100%;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background: #ddd;
+}
+
+#bodyWrap:focus {
+  outline:none;
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#bodyArea {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: block;
+  background: url("../gfx/tentacles-right.png") no-repeat 290px 222px;
+  position: relative;
+}
+
+#textArea {
+  min-height: 360px;
+  margin: 0px auto 0 auto;
+  padding: 80px 40px;;
+  line-height: 1.8;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: 'Fira Code', monospace;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  color: #222222;
+}
+
+#textArea.paused {
+  opacity: 0.3;
+}
+
+#textArea span.char {
+  white-space: nowrap;
+}
+
+#textArea span.space {
+  color: #ccc;
+}
+
+#textArea span.charVisited {
+  color: LightGrey;
+}
+
+#textArea span.charError {
+  color: LightCoral;
+}
+
+#textArea span.charVisitedSummary {
+  color: DimGrey;
+}
+#textArea span.charErrorSummary {
+  color: Crimson;
+}
+#textArea .charMetaSummary {
+  position: absolute;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: Black;
+  text-align: center;
+  margin-top: -12px;
+  width: 30px;
+}
+
+#textArea .charMeta {
+  position: absolute;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: Grey;
+  text-align: center;
+  margin-top: -12px;
+  width: 30px;
+}
+
+#textArea span.charMeta sup {
+  vertical-align: super;
+  font-size: 8px;
+}
+
+#textArea span.cursor {
+  background: #000000;
+  color: #ffffff;
+}
+
+#statusWrap {
+  width: 100%;
+  display: block;
+  margin: auto;
+  background: #eeeeee;
+}
+
+#statusArea {
+  width: 1120px;
+  min-height: 16px;
+  padding: 16px 0;
+  display: block;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+#statusArea p {
+  line-height: 32px;
+  margin: 0;
+  color: DimGrey;
+}
+
+#statusArea table {
+  width: 100%;
+  height: 32px;
+}
+
+#statusArea table td {
+  width: 20%;
+  color: Grey;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#statusArea table td span {
+  padding-left: 16px;
+  color: #222222;
+  font-weight: bold;
+}
+
+#progressWrap {
+  width: 100%;
+  display: block;
+  margin: auto;
+  background: #eeeeee;
+}
+
+#progressArea {
+  width: 1120px;
+  padding: 30px 0 0 0;
+  display: block;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+#progressArea #canvasWrap {
+  height: 400px;
+}
+
+#progressArea p {
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: DimGrey;
+  text-align: center;
+  
+}
+
+#progressArea a.box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #ddd;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+
+#progressArea a.box.current {
+  border: 2px solid #222222 !important;
+}
+
+#progressArea a.box.completed {
+  background: #aaaaaa;
+  border: 2px solid #aaaaaa;
+}
+
+#progressArea a.box.error {
+  background: LightCoral;
+  border: 2px solid LightCoral;
+}
+
+#footWrap {
+  width: 100%;
+  background: #eee;
+}
+
+#footArea {
+  width: 1120px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #bbbbbb;
+}
+
+#footArea table {
+  width: 100%;
+}
+
+#footArea table td {
+  height: 100px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+#footArea table td.column1 {
+  text-align: left;
+  font-family: 'Bad Script', cursive;
+}
+
+#footArea table td.column2 {
+  text-align: right;
+}
+
+#footArea table td.column2 img {
+  opacity: 0.1;
+  width: 48px;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+#footArea div.quote {
+  line-height: 120px;
+  font-family: 'Bad Script', cursive;
+  font-size: 16px;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+}
+
+#footArea div.copyright {
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#statisticErrors.red {
+  color:red !important;
+}
+
+#tableWithAverages {
+  width: 100%;
+  height: 48px;
+}
+
+#tableWithAverages td {
+  width: 33%;
+  color: Grey;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tableWithAverages td span {
+  padding-left: 16px;
+  color: #222222;
+  font-weight: bold;
+}
+
+#tableBooks {
+  width:1200px;
+  margin:auto;
+  display: block;
+}
+#tableBooks td {
+  width: 360px;
+  padding: 20px;
+  vertical-align: top;
+  cursor: pointer;
+  line-height: 1.6;
+  text-align: justify;
+  color:#aaa;
+}
+#tableBooks h2 {
+  color:#ccc;
+}
+#tableBooks td:hover {
+  background: #2f2f2f;
+  color: #eeeeee;
+}
+#tableBooks td:hover h2 {
+  color: #fff;
+}
+#tableBooks td h2 {
+  font-family: 'Bad Script', serif;
+  font-size: 28px;
+  text-align: center;
+}
+#tableBooks td p {
+  font-style: italic;
+  text-align: center;
+}
+#tableBooks td p.pages {
+  font-style: normal;
+}
+#tableBooks td p.pages span.percent {
+  
+}
+
+.displayNone {
+  display: none
+}
+
+.customTooltip {
+  font-size:14px;
+  background: #000;
+  color:#eeeeee;
+  padding: 16px;
+  border: 0;
+  box-shadow: none;
+}

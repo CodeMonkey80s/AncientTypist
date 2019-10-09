@@ -1,0 +1,15 @@
+{
+    "name": "mp/ancient-typist",
+    "description": "Learn Touch Typing with Ancient Texts from the Beyond",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michal Przybylowicz",
+            "email": "michal.przybylowicz@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^3.1"
+    }
+}
