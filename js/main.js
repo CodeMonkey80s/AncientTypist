@@ -367,11 +367,11 @@ $(document).ready(function () {
                         
                     }
                 }
-                
-                averageSpeed = parseInt(totalSpeedSum / elementsCounted);
-                averageErrors = totalErrorsSum / elementsCounted;
-                averageAccuracy = totalAccuracySum / elementsCounted;
-                
+                if (elementsCounted>0) {
+                    averageSpeed = parseInt(totalSpeedSum / elementsCounted);
+                    averageErrors = totalErrorsSum / elementsCounted;
+                    averageAccuracy = totalAccuracySum / elementsCounted;
+                }
                 $("#averageSpeed").text(averageSpeed + " " + (this.optionSpeedUnit));
                 $("#averageErrors").text(averageErrors.toFixed(2));
                 $("#averageAccuracy").text(averageAccuracy.toFixed(0) + "%");
